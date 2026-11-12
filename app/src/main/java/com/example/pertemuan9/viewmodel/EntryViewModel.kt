@@ -1,4 +1,4 @@
-package com.example.pertemuan9.repositori.viewmodel
+package com.example.pertemuan9.viewmodel
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
