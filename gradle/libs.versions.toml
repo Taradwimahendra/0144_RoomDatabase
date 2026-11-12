@@ -9,6 +9,7 @@ activityCompose = "1.12.0"
 composeBom = "2025.11.01"
 room = "2.8.4"
 kspver = "2.3.13"
+kotlin = "2.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +37,7 @@ navigation-compose = { module = "androidx.navigation:navigation-compose", versio
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "kspver" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 [bundles]
 room = ["room-runtime", "room-ktx"]
