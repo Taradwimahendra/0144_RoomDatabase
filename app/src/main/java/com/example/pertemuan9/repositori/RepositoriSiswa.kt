@@ -10,7 +10,8 @@ interface RepositoriSiswa {
 
     suspend fun deletesiswa(siswa: Siswa)
 
-
+    suspend fun updatesiswa(siswa: Siswa)
+}
 
 class OfflineRepositoriSiswa(
     private val siswaDao: SiswaDao
