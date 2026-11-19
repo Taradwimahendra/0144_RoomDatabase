@@ -1,5 +1,6 @@
 package com.example.pertemuan9.room
 
+import android.R
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -11,13 +12,14 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface SiswaDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun  insert(siswa: Siswa)
+    suspend fun insert(siswa: Siswa)
 
-    @Query("SELECT * From tblSiswa ORDER BY nama ASC")
+    @Query(value="SELECT * from tblSiswa ORDER BY nama ASC")
     fun getAllSiswa(): Flow<List<Siswa>>
 
-    @Query("SELECT * From tblSiswa WHERE id = :id")
-    fun getAllSiswa(id: Int): Flow<List<Siswa>>
+    //Edit : tambah 3 fungsi
+    @Query(value = "SELECT * from tblSiswa WHERE id = :id")
+    fun getSiswa(id: Int): Flow<Siswa>
 
     @Delete
     suspend fun delete(siswa: Siswa)
@@ -25,6 +27,4 @@ interface SiswaDao {
     @Update
     suspend fun update(siswa: Siswa)
 }
-
-
 
