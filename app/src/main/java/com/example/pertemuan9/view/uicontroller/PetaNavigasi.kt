@@ -1,4 +1,4 @@
-package com.example.pertemuan9.uicontroller
+package com.example.pertemuan9.view.uicontroller
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -16,7 +16,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.pertemuan9.R
-import androidx.navigation.compose.composable
 import com.example.pertemuan9.view.DestinasiEntry
 import com.example.pertemuan9.view.DestinasiHome
 import com.example.pertemuan9.view.EntrySiswaScreen
